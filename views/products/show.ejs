@@ -10,5 +10,9 @@
   <h3> Price is <%= product.price%> </h3>
   <h3> Category is <%=product.category %> </h3>
   <a href="/products"><button>All products</button></a>
+  <a href="/products/<%=product._id%>/edit"><button>Edit Product</button></a>
+  <form action="/products/<%=product._id%>?_method=DELETE" method="post">
+    <button>Delete Product</button>
+  </form>
 </body>
 </html>
